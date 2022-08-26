@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section id="home">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+            <input type="text">
+        </nav>
+        <div class="fila">
+            <div class="col">
+                <h2>New <span class="normal">&</span> </h2>
+                <h2 class="normal">innovative</h2>
+                <h2>ideas</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus velrem. sit amet consectetur</p>
+                <button>Start</button>
+                <div class="figura1">
+                    <img src="img/figura1.png" alt="">
+                </div>
+                <div class="figura3">
+                    <img src="img/figura3.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="figura2">
+                    <img src="img/figura2.png" alt="">
+                </div>
+                <div class="nave">
+                    <img src="img/nave.png" alt="">
+                </div>
+                <div class="compu">
+                    <img src="img/compu.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="item i1" onclick="mostrar1()">
+                <i class="fa-solid fa-video"></i>
+                <div class="info">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item i2" onclick="mostrar2()">
+                <i class="fa-solid fa-note-sticky"></i>
+                <div class="info">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item i3" onclick="mostrar3()">
+                <i class="fa-brands fa-font-awesome"></i>
+                <div class="info">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </footer>
+        
+       <div id="item1">
+            <i class="fa-solid fa-video"></i>
+            <div class="info">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas sapiente libero asperiores non impedit ea, reiciendis consequatur consectetur voluptatum repudiandae harum excepturi, quis unde autem ipsum eos in itaque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas sapiente libero asperiores non impedit ea, reiciendis consequatur consectetur voluptatum repudiandae harum excepturi, quis unde autem ipsum eos in itaque?</p>
+            </div>
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+       </div>
+       <div id="item2">
+            <i class="fa-solid fa-note-sticky"></i>
+            <div class="info">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas sapiente libero asperiores non impedit ea, reiciendis consequatur consectetur voluptatum repudiandae harum excepturi, quis unde autem ipsum eos in itaque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas sapiente libero asperiores non impedit ea, reiciendis consequatur consectetur voluptatum repudiandae harum excepturi, quis unde autem ipsum eos in itaque?</p>
+            </div>
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+        </div>
+        <div id="item3">
+            <i class="fa-brands fa-font-awesome"></i>
+            <div class="info">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas sapiente libero asperiores non impedit ea, reiciendis consequatur consectetur voluptatum repudiandae harum excepturi, quis unde autem ipsum eos in itaque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas sapiente libero asperiores non impedit ea, reiciendis consequatur consectetur voluptatum repudiandae harum excepturi, quis unde autem ipsum eos in itaque?</p>
+            </div>
+            <div class="close" onclick="cerrar()">
+                &#x2715
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function mostrar1(){
+            document.getElementById('item1').style.left = '0';
+        }
+        function mostrar2(){
+            document.getElementById('item2').style.left = '0';
+        }
+        function mostrar3(){
+            document.getElementById('item3').style.left = '0';
+        }
+        function cerrar(){
+            document.getElementById('item1').style.left = '-100%';
+            document.getElementById('item2').style.left = '-100%';
+            document.getElementById('item3').style.left = '-100%';
+        }
+    </script>
+</html>
